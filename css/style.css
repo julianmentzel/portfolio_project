@@ -27,6 +27,7 @@
     --font-size-base: 1rem;
     --font-size-lg: 1.25rem;
     --font-size-xl: 1.5rem;
+    --font-size-jumbo: 6rem;
     --font-family: 'Inter', sans-serif;
 
     /* Spacing */
@@ -60,7 +61,7 @@ ul {
 }
 
 /* ==============================
-        Layout & Navigation
+        Header & Navigation
 =================================  */
 
 header {
@@ -112,3 +113,120 @@ header {
     cursor: pointer;
 }
 
+/* ==============================
+        Hero
+=================================  */
+
+.hero {
+    /* Turn to flex & Add Height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+
+    /* Align to left */
+    align-items:flex-start;
+
+    /* Add padding */
+    padding-top: 10rem;
+    padding-bottom: 0;
+    padding-left: var(--spacing-xxxl);
+    padding-right: var(--spacing-xxxl);
+
+
+    max-width: 1450px;
+    /* margin: 0 auto; */
+
+    /* Add border */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.eyebrow {
+    /* Font Styling */
+    font-size: var(--font-size-sml) ;
+    color: var(--muted-text);
+
+    /* Margins */
+    margin-top: 0;
+}
+
+.hero h1 {
+    /* Font Styling */
+    font-size: 96px;
+    color: var(--primary-color);
+    line-height: 1.05;
+    font-weight: bold;
+
+    /* Margins */
+    margin-top: 1.5rem;
+    
+}
+
+.body_line {
+     /* Font Styling */
+    font-size: 1.125rem;
+    line-height: 1.625;
+    color: var(--muted-text);
+
+    max-width: 36rem;
+
+     /* Margins */
+    margin-top: 2rem;
+}
+
+.hero-buttons {
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+
+    /* Margins */
+    margin-top: 2.5rem;
+}
+
+#primary_button {
+    /* Color */
+   background-color: var(--primary-color);
+   color: var(--background-color);
+
+    /* Font Size */
+    font-size: 0.875rem;
+    font-weight: 500;
+
+    /* Padding */
+    padding: 0.75rem 1.5rem;
+
+    /* Border */
+    border-radius: 50rem;
+
+}
+
+#primary_button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+#secondary_button {
+    /* Color */
+    background-color: transparent;
+    color: var(--primary-color);
+ 
+     /* Font Size */
+     font-size: 0.875rem;
+     font-weight: 500;
+ 
+     /* Padding */
+     padding: 0.75rem 1.5rem;
+ 
+     /* Border */
+     border: 1px solid #ffffff1a;
+     border-radius: 50rem;
+
+
+}
+
+#secondary_button:hover {
+    border: 1px solid #3b71f0;
+    color: #3b71f0;
+    cursor: pointer;
+}

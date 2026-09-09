@@ -84,7 +84,10 @@ header {
     border-bottom: 1px solid var(--border-color);
 
     /* BG color */
-    background-color: rgb(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
+
+    /* Stacking order */
+    z-index: 100;
 
 }
 
@@ -122,17 +125,20 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* min-height: 100vh; */
 
     /* Positioning */
     position: relative;
 
     /* Add border */
     border-bottom: 1px solid var(--border-color);
+
+    overflow: hidden;
 }
 
 .hero-content {
     max-width: 1450px;
+    position: relative;
+    z-index: 1;
     /* margin: 0 auto; */
 
     /* Add padding */
@@ -165,7 +171,7 @@ header {
     top: 96px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
+    z-index: 0;
 
     /* Gradient */
     background: radial-gradient(ellipse, rgba(91, 147, 245, 0.3) 0%, transparent 70%);

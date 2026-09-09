@@ -253,3 +253,40 @@ header {
     color: #3b71f0;
     cursor: pointer;
 }
+
+/* ==============================
+        About
+=================================  */
+
+.about {
+
+    /* Create space */
+    padding: 9rem 1.5rem;
+
+    /* Add border */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.about-content {
+     /* Turn into flex box */
+     display: flex;
+
+     /* Add space between items */
+    justify-content: space-between;
+    gap: 25rem;
+    margin: 0 15rem;
+
+    max-width: 72rem;
+}
+
+.about h2 {
+    /* Set font size */
+    font-size: 3rem;
+}
+
+.about p {
+    /* Set font size & color & lH*/
+    font-size: 1.125rem;
+    color: var(--muted-text);
+    line-height: 1.625;
+}

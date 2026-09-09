@@ -121,24 +121,28 @@ header {
     /* Turn to flex & Add Height*/
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100vh;
+    justify-content: center;
+    /* min-height: 100vh; */
 
-    /* Align to left */
-    align-items:flex-start;
-
-    /* Add padding */
-    padding-top: 10rem;
-    padding-bottom: 0;
-    padding-left: var(--spacing-xxxl);
-    padding-right: var(--spacing-xxxl);
-
-
-    max-width: 1450px;
-    /* margin: 0 auto; */
+    /* Positioning */
+    position: relative;
 
     /* Add border */
     border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+    max-width: 1450px;
+    /* margin: 0 auto; */
+
+    /* Add padding */
+    padding-top: 10rem;
+    padding-bottom: 11rem;
+    padding-left: var(--spacing-xxxl);
+    padding-right: var(--spacing-xxxl);
+
+    /* Align to left */
+    align-items:flex-start;
 }
 
 .eyebrow {
@@ -148,6 +152,25 @@ header {
 
     /* Margins */
     margin-top: 0;
+}
+
+.hero::before {
+    /* Required to Render */
+    content: '';
+
+    /* Positioning & Dimensions*/
+    position: absolute;
+    width: 820px;
+    height: 420px;
+    top: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+
+    /* Gradient */
+    background: radial-gradient(ellipse, rgba(91, 147, 245, 0.3) 0%, transparent 70%);
+    filter: blur(130px);
+    
 }
 
 .hero h1 {

@@ -42,7 +42,7 @@
 }
 
 /* ==============================
-        BASTE STYLES
+        BASE STYLES
 =================================  */
 
 body {
@@ -291,8 +291,81 @@ header {
 }
 
 .about p {
-    /* Set font size & color & lH*/
+    /* Set font size & color & LH*/
     font-size: 1.125rem;
     color: var(--muted-text);
     line-height: 1.625;
+}
+
+/* ==============================
+        Tech Stack
+=================================  */
+
+.tech-stack {
+
+    /* Border */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.content-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+
+    margin: 0 16rem;
+    
+}
+
+.tech-stack h2 {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.tech-stack p {
+    font-size: 1.125rem;
+    color: var(--muted-text);
+
+    /* Mar */
+    margin-top: 1.5rem;
+}
+
+.tech-stack-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    /* Mar */
+    margin-top: 3.5rem;
+}
+
+.frontend-card, .backend-card, .tools-card {
+
+    /* Border */
+    border: 1px solid var(--border-color);
+    border-radius: 1.25rem;
+
+    /* Color */
+    background-color: #010101 ;
+
+    /* Pad */
+    padding: 1.5rem;
+}
+
+.frontend-card h5, .backend-card h5, .tools-card h5 {
+    
+    color: var(--muted-text);
+}
+
+.frontend-elements, .backend-elements, .tools-elements {
+
+    /* Margins */
+    margin-top: 1.25rem;
+}
+
+.tech-badge {
+    /* Border */
+    border: 1px solid #ffffff1a ;
+    /* Margin */
+    margin: 0.5rem 1rem;
 }

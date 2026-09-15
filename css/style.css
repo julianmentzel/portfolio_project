@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: Inter; */
 }
 
 /* ==============================
@@ -312,7 +313,7 @@ header {
     justify-content: flex-end;
     flex-direction: column;
 
-    margin: 0 16rem;
+    margin: 9rem 16rem;
     
 }
 
@@ -332,7 +333,7 @@ header {
 
 .tech-stack-cards {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
 
     /* Mar */
@@ -340,6 +341,9 @@ header {
 }
 
 .frontend-card, .backend-card, .tools-card {
+
+    flex: 1;
+    max-width: 400px;
 
     /* Border */
     border: 1px solid var(--border-color);
@@ -365,7 +369,32 @@ header {
 
 .tech-badge {
     /* Border */
-    border: 1px solid #ffffff1a ;
+    border: none;
+    border-radius: 50rem;
+
+    display: inline-block;
+    text-align: center;
+
+    /* Font Size */
+    font-size: .875rem;
+    /* Color */
+    background-color: var(--background-color);
     /* Margin */
-    margin: 0.5rem 1rem;
+    /* margin: 0.5rem 0; */
+    /* Padding */
+    padding: 0.5rem 1rem;
+    
+}
+
+.cards-heading {
+    /* Size */
+    font-size: .875rem;
+    /* Weight */
+    font-weight: 200;
+}
+
+.frontend-elements ul, .backend-elements ul, .tools-elements ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
 }

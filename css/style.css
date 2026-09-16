@@ -404,3 +404,89 @@ header {
     gap: .7rem;
 }
 
+/* ==============================
+        Projects Section
+=================================  
+
+DEV PROJECTS 
+------------ */
+
+.projects {
+
+    /* Create space */
+    padding: 9rem 1.5rem;
+
+    /* Add border */
+    border-bottom: 1px solid var(--border-color);
+}
+
+.projects h2 {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.dev-projects {
+
+    /* Mar */
+    margin-top: 3.5rem;
+}
+
+.dev-projects h4 {
+    
+    /* Size */
+    font-size: 1rem;
+
+    /* Color */
+    color: var(--muted-text);
+    font-weight: 400;
+}
+
+.dev-projects-cards {
+    /* Layout */
+    display: flex;
+    gap: 1.5rem;
+
+    /* Margin */
+    margin-top: 2rem;
+}
+
+.dev-project-card {
+    /* Border */
+    border: 0.063rem solid var(--border-color);
+    border-radius: 1.25rem;
+
+    /* Constrain Container Width */
+    max-width: 400px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.dev-project-card img {
+   /* Constrain Img Width*/
+   width: 100%;
+}
+
+.card-content {
+
+    /* Margins */
+    margin: 1.5rem;
+}
+
+.card-content h5 {
+
+   /* Size */
+   font-size: var(--font-size-lg);
+}
+
+.card-content p {
+
+    /* Size + Color*/
+    font-size: .875rem;
+    color: var(--muted-text);
+
+    /* Margins */
+    margin-top: 1rem;
+ }
+
+

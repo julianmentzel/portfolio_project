@@ -356,6 +356,11 @@ header {
     padding: 1.5rem;
 }
 
+.frontend-card:hover, .backend-card:hover, .tools-card:hover {
+    border: 1px solid #3b71f0;
+    cursor: pointer;
+}
+
 .frontend-card h5, .backend-card h5, .tools-card h5 {
     
     color: var(--muted-text);
@@ -398,3 +403,4 @@ header {
     flex-wrap: wrap;
     gap: .7rem;
 }
+

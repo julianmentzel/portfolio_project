@@ -545,3 +545,80 @@ DEV & VENTURE PROJECTS
     border: 1px solid #3b71f0;
     cursor: pointer;
  }
+
+ /* ==============================
+        Contact Section
+=================================  
+------------ */
+
+.contact {
+
+    padding: 9rem 1.5rem;
+}
+
+.contact-container {
+
+    margin: 9rem 16rem; 
+}
+
+.contact-container h2 {
+
+    font-size: 3.75rem;
+    line-height: 1;
+
+    max-width: 700px;
+
+}
+
+.contact-subtitle {
+
+    margin-top: 1.5rem;
+
+    color: var(--muted-text);
+
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+
+.contact-elements {
+
+    margin-top: 3.5rem;
+
+    border-top: 1px solid var(--border-color);
+
+}
+
+.contact-label {
+
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    padding: 1.5rem 0;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contact-label-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 8rem;
+    flex-shrink: 0;
+}
+
+.contact-label-info-text {
+    font-size: .875rem;
+    font-weight: 300;
+}
+
+.contact-content {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.footer {
+
+    padding: 0 1.5rem;
+}

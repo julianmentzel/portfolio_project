@@ -407,7 +407,7 @@ header {
         Projects Section
 =================================  
 
-DEV PROJECTS 
+DEV & VENTURE PROJECTS 
 ------------ */
 
 .projects {
@@ -425,23 +425,23 @@ DEV PROJECTS
 
 }
 
-.dev-projects {
+.dev-projects, .venture-projects {
 
     /* Mar */
     margin-top: 3.5rem;
 }
 
-.dev-projects h4 {
+.dev-projects h4, .venture-projects h4 {
     
     /* Size */
     font-size: 1rem;
 
     /* Color */
     color: var(--muted-text);
-    font-weight: 400;
+    font-weight: 350;
 }
 
-.dev-projects-cards {
+.dev-projects-cards, .venture-projects-cards {
     /* Layout */
     display: flex;
     gap: 1.5rem;
@@ -450,7 +450,7 @@ DEV PROJECTS
     margin-top: 2rem;
 }
 
-.dev-project-card {
+.dev-project-card, .venture-project-card {
     /* Border */
     border: 0.063rem solid var(--border-color);
     border-radius: 1.25rem;
@@ -464,7 +464,13 @@ DEV PROJECTS
     overflow: hidden;
 }
 
-.dev-project-card img {
+.dev-project-card:hover, .venture-project-card:hover {
+    /* Hover effect for cards */
+    border: 1px solid #3b71f0;
+    cursor: pointer;
+}
+
+.dev-project-card img, .venture-project-card img {
    /* Constrain Img Width*/
    width: 100%;
 }
@@ -506,6 +512,10 @@ DEV PROJECTS
     margin-top: 1.5rem;
  }
 
+ .card-content a i {
+    margin: 0 0.35rem;
+ }
+
  .card-badges ul {
     /* Layout */
     display: flex;
@@ -530,9 +540,8 @@ DEV PROJECTS
     border-radius: 50rem;
  }
 
-/* VENTURE PROJECTS  */
-
-.venture-projects {
-    /* Margins */
-    margin-top: 5rem;
-}
+ .card-badges li:hover {
+    /* Hover effect for badges */
+    border: 1px solid #3b71f0;
+    cursor: pointer;
+ }

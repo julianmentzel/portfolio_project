@@ -413,7 +413,7 @@ DEV & VENTURE PROJECTS
 .projects {
 
     /* Create space */
-    padding: 9rem 1.5rem;
+    /* padding: 9rem 1.5rem; */
 
     /* Add border */
     border-bottom: 1px solid var(--border-color);
@@ -551,10 +551,10 @@ DEV & VENTURE PROJECTS
 =================================  
 ------------ */
 
-.contact {
+/* .contact {
 
     padding: 9rem 1.5rem;
-}
+} */
 
 .contact-container {
 
@@ -589,6 +589,11 @@ DEV & VENTURE PROJECTS
 
 }
 
+.contact-content {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
 .contact-label {
 
     display: flex;
@@ -598,6 +603,13 @@ DEV & VENTURE PROJECTS
     padding: 1.5rem 0;
 
     border-bottom: 1px solid var(--border-color);
+}
+
+.contact-label:hover,
+.contact-label:hover .contact-label-info,
+.contact-label:hover .contact-content{
+    color: var(--accent-color);
+    cursor: pointer;
 }
 
 .contact-label-info {
@@ -613,9 +625,8 @@ DEV & VENTURE PROJECTS
     font-weight: 300;
 }
 
-.contact-content {
-    font-size: 1.5rem;
-    color: var(--primary-color);
+.contact-label i.fa-chevron-right {
+    margin-left: auto;
 }
 
 .footer {

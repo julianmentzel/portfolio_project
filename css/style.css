@@ -37,7 +37,11 @@
     --spacing-lg: 2rem;
     --spacing-xl: 4rem;
     --spacing-xxl: 8rem;
+    --spacing-vertical-pad:10rem;
+    --spacing-horizontal-pad: 1.5rem;
+    --spacing-child-cont-horizontal-mar: 22.5rem;
     --spacing-xxxl: 16rem;
+    --spacing-header-horizontal-pad: 26rem;
     --spacing-jumpo: 32rem;
 }
 
@@ -78,7 +82,7 @@ header {
     top: 0;
 
     /* Padding */
-    padding: 0 var(--spacing-xxxl);
+    padding: 0 var(--spacing-header-horizontal-pad);
 
     /* Add border */
     border-bottom: 1px solid var(--border-color);
@@ -128,6 +132,7 @@ header {
 
     /* Positioning */
     position: relative;
+    padding: var(--spacing-vertical-pad) var(--spacing-horizontal-pad);
 
     /* Add border */
     border-bottom: 1px solid var(--border-color);
@@ -136,16 +141,12 @@ header {
 }
 
 .hero-content {
-    max-width: 1450px;
+    max-width: 900px;
     position: relative;
     z-index: 1;
-    /* margin: 0 auto; */
 
-    /* Add padding */
-    padding-top: 10rem;
-    padding-bottom: 11rem;
-    padding-left: var(--spacing-xxxl);
-    padding-right: var(--spacing-xxxl);
+    /* Add margins */
+    margin: 0 var(--spacing-child-cont-horizontal-mar);
 
     /* Align to left */
     align-items:flex-start;
@@ -267,7 +268,7 @@ header {
 .about {
 
     /* Create space */
-    padding: 9rem 1.5rem;
+    padding: var(--spacing-vertical-pad) var(--spacing-horizontal-pad);
 
     /* Add border */
     border-bottom: 1px solid var(--border-color);
@@ -280,7 +281,7 @@ header {
      /* Add space between items */
     justify-content: space-between;
     gap: 25rem;
-    margin: 0 15rem;
+    margin: 0 var(--spacing-child-cont-horizontal-mar);
 
     max-width: 72rem;
 }
@@ -305,6 +306,7 @@ header {
 
     /* Border */
     border-bottom: 1px solid var(--border-color);
+    padding: var(--spacing-vertical-pad) var(--spacing-horizontal-pad);;
 }
 
 .content-container {
@@ -312,7 +314,7 @@ header {
     justify-content: flex-end;
     flex-direction: column;
 
-    margin: 9rem 16rem;
+    margin: 0 var(--spacing-child-cont-horizontal-mar);
     
 }
 
@@ -414,6 +416,11 @@ DEV & VENTURE PROJECTS
 
     /* Add border */
     border-bottom: 1px solid var(--border-color);
+    padding: var(--spacing-vertical-pad) var(--spacing-horizontal-pad);
+}
+
+.content-container {
+    margin: 0 var(--spacing-child-cont-horizontal-mar);
 }
 
 .projects h2 {
@@ -548,9 +555,13 @@ DEV & VENTURE PROJECTS
 =================================  
 ------------ */
 
+.contact {
+    padding: var(--spacing-vertical-pad) var(--spacing-horizontal-pad) 3rem var(--spacing-horizontal-pad);
+}
+
 .contact-container {
 
-    margin: 9rem 16rem 3.125rem 16rem; 
+    margin: 0 var(--spacing-child-cont-horizontal-mar); 
 }
 
 .contact-container h2 {
@@ -628,7 +639,7 @@ DEV & VENTURE PROJECTS
 /* =================================   */
 
 .footer {
-    margin: 1rem 16rem 9rem 16rem; 
+    margin: 1rem 24rem 10rem 24rem; 
 
     font-size: .875rem;
     font-weight: 250;

@@ -636,7 +636,7 @@ DEV & VENTURE PROJECTS
 
 /* ==============================
             FOOTER
-/* =================================   */
+=================================   */
 
 .footer {
     margin: 1rem 24rem 10rem 24rem; 
@@ -644,4 +644,39 @@ DEV & VENTURE PROJECTS
     font-size: .875rem;
     font-weight: 250;
     color: var(--muted-text);
+}
+
+/* ==============================
+        BACK TO TOP BUTTON
+=================================   */
+
+#back-to-top {
+    /* Position */
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+
+    /* Size */
+    width: 2.5rem;
+    height: 2.5rem;
+
+    /* Style */
+    background-color:#030303;
+    color: var(--primary-color);
+    border: 0.063rem solid var(--border-color);
+    border-radius: 50%;
+    cursor: pointer;
+
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Smooth transition */
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+    /* Color Change */
+    color: var(--accent-color);
+    border: 0.063rem solid var(--accent-color);
 }

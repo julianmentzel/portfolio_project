@@ -2,7 +2,7 @@
 
 const backToTopButton = document.getElementById('back-to-top');
 
-// Show & Hide Button Based on ScrollY
+// SScroll Listener - how & Hide Button Based on ScrollY
 window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
         backToTopButton.style.opacity = 1;
@@ -11,4 +11,13 @@ window.addEventListener('scroll', () => {
         backToTopButton.style.opacity = 0;
         backToTopButton.style.visibility = 'hidden';
     }
+});
+
+// Click Listener - Bump user up when button is clicked
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    })
 });

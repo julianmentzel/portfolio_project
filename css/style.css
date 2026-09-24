@@ -683,3 +683,7 @@ DEV & VENTURE PROJECTS
     color: var(--accent-color);
     border: 0.063rem solid var(--accent-color);
 }
+
+.nav-bar a.active {
+    color: var(--accent-glow);
+}

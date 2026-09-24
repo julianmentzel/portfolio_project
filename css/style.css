@@ -559,6 +559,19 @@ DEV & VENTURE PROJECTS
     cursor: pointer;
  }
 
+ /* Add aniamtion to chevron */
+
+ /* Initial State */
+ .card-content a .fa-chevron-right {
+    transition: transform 0.2s ease;
+ }
+
+ /* Hover state */
+
+ .card-content a:hover .fa-chevron-right {
+    transform: translateX(4px);
+ }
+
  /* ==============================
         Contact Section
 =================================  
@@ -639,6 +652,17 @@ DEV & VENTURE PROJECTS
 
 .contact-label i.fa-chevron-right {
     margin-left: auto;
+}
+
+/* Chevron animation */
+/* Initial state */
+.contact-elements a .fa-chevron-right {
+    transition: transform 0.2s ease;
+}
+
+/* Hover state */
+.contact-elements a:hover .fa-chevron-right {
+    transform: translateX(4px);
 }
 
 

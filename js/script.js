@@ -37,3 +37,15 @@ window.addEventListener('scroll', () => {
         };
     })
 });
+
+// Scroll Listener - Blur header
+
+const headerBlurEffect = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        headerBlurEffect.classList.add('scrolled');
+    } else {
+        headerBlurEffect.classList.remove('scrolled');
+    };
+});

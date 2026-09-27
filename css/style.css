@@ -721,3 +721,91 @@ DEV & VENTURE PROJECTS
 .nav-bar a.active {
     color: var(--accent-glow);
 }
+
+/* ==============================
+Mobile Optimization Media Queries
+=================================   */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 1.5rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        padding: 6.25rem 1.5rem 7rem 1.5rem;
+    }
+
+    .hero-content {  
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        max-width: 250px;
+    }
+
+    .about {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .about-content {
+        margin: 0;
+        padding: 0;
+
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+
+    .tech-stack {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .tech-stack-cards {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .projects {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .dev-projects, .venture-projects {
+        margin-top: 4rem;
+    }
+
+    .dev-projects-cards, .venture-projects-cards {
+        margin-top: 1rem;
+
+        flex-direction: column;
+    }
+
+    .content-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-container {
+        margin: 4rem 1.5rem;
+    }
+
+    .footer {
+        margin: 1rem 1.5rem 4rem;
+    }
+}

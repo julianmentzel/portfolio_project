@@ -43,6 +43,7 @@
     --spacing-xxxl: 16rem;
     --spacing-header-horizontal-pad: 26rem;
     --spacing-jumpo: 32rem;
+    --content-max: 72rem; /* 1152px 
 }
 
 /* ==============================
@@ -319,7 +320,7 @@ header.scrolled {
 
     /* Border */
     border-bottom: 1px solid var(--border-color);
-    padding: var(--spacing-vertical-pad) var(--spacing-horizontal-pad);;
+    padding: var(--spacing-vertical-pad) var(--spacing-horizontal-pad);
 }
 
 .content-container {
@@ -747,7 +748,7 @@ Mobile Optimization Media Queries
 
     .hero h1 {
         font-size: 3rem;
-        max-width: 250px;
+        /* max-width: 250px; */
     }
 
     .about {
@@ -808,5 +809,5 @@ Mobile Optimization Media Queries
     .footer {
         margin: 1rem 1.5rem 4rem;
     }
-};
+}
 

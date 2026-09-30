@@ -43,7 +43,7 @@
     --spacing-xxxl: 16rem;
     --spacing-header-horizontal-pad: 26rem;
     --spacing-jumpo: 32rem;
-    --content-max: 72rem; /* 1152px 
+    --content-max: 72rem; /* 1152px */
 }
 
 /* ==============================
@@ -810,4 +810,3 @@ Mobile Optimization Media Queries
         margin: 1rem 1.5rem 4rem;
     }
 }
-

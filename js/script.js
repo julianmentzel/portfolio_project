@@ -30,12 +30,17 @@ const navLinks = document.querySelectorAll('.nav-bar a');
 
 window.addEventListener('scroll', () => {
     sections.forEach(section => {
-        if (section.getBoundingClientRect().top <= 250 && section.getBoundingClientRect().bottom > 250) {
+        if (!section.id) return;
+
+        const { top, bottom } = section.getBoundingClientRect();
+        if (top <= 250 && bottom > 250) {
+            const activeLink = document.querySelector(`.nav-bar a[href="#${section.id}"]`);
+            if (!activeLink) return;
+
             navLinks.forEach(link => link.classList.remove('active'));
-            const activeLink = document.querySelector(`a[href="#${section.id}"]`);
-            activeLink.classList.add('active')
-        };
-    })
+            activeLink.classList.add('active');
+        }
+    });
 });
 
 // Scroll Listener - Blur header

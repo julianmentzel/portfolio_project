@@ -54,3 +54,7 @@ window.addEventListener('scroll', () => {
         headerBlurEffect.classList.remove('scrolled');
     };
 });
+
+
+// Hamburger & Mobile Menu Functionailty
+

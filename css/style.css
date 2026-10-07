@@ -724,6 +724,56 @@ DEV & VENTURE PROJECTS
 }
 
 /* ==============================
+        Hamburger Menu
+=================================*/
+
+/* Hide on Desktop */
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show on Mobile */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+/* ==============================
+        Mobile Menu
+=================================*/
+
+/* Hide on Desktop */
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 2rem 1.5rem;
+    z-index: 99;
+}
+
+.mobile-menu.open {
+    display: block;
+} 
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ==============================
 Mobile Optimization Media Queries
 =================================   */
 
@@ -733,8 +783,12 @@ Mobile Optimization Media Queries
         padding: 0 1.5rem;
     }
 
-    body {
-        overflow-x: hidden;
+    .nav-bar {
+        display: none;
+    }
+
+    .about h2, .tech-stack h2, .projects h2, .contact-container h2 {
+        font-size: 1.8rem;
     }
 
     .hero {
@@ -746,9 +800,9 @@ Mobile Optimization Media Queries
         padding: 0;
     }
 
-    .hero h1 {
+    .hero-content h1 {
+        max-width: 250px;
         font-size: 3rem;
-        /* max-width: 250px; */
     }
 
     .about {
@@ -787,6 +841,10 @@ Mobile Optimization Media Queries
         padding-left: 1.5rem;
     }
 
+    .dev-project-card, .venture-project-card {
+        max-width: 100%;
+    }
+
     .dev-projects, .venture-projects {
         margin-top: 4rem;
     }
@@ -802,8 +860,29 @@ Mobile Optimization Media Queries
         padding: 0;
     }
 
+    .contact {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
     .contact-container {
-        margin: 4rem 1.5rem;
+        margin: 0 0 4rem 0rem;
+    }
+
+    .contact-container h2 {
+    
+        max-width: 360px;
+    
+    }
+
+    .contact-content {
+        font-size: 1rem;
+        flex-shrink: 1;
+        
+    }
+
+    .contact-label {
+        gap: 0.65rem;
     }
 
     .footer {

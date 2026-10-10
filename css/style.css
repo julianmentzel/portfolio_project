@@ -759,6 +759,7 @@ DEV & VENTURE PROJECTS
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
+    color: var(--muted-text);
     padding: 2rem 1.5rem;
     z-index: 99;
 }

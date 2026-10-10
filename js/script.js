@@ -58,3 +58,12 @@ window.addEventListener('scroll', () => {
 
 // Hamburger & Mobile Menu Functionailty
 
+const hamburgerMenu = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+const hamburgerIcon = document.querySelector('#hamburger i');
+
+hamburgerMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open')
+    hamburgerIcon.classList.toggle('fa-bars') // Remove fa-bars class from <i>
+    hamburgerIcon.classList.toggle('fa-xmark') // Add in fa-xmark into <i>
+});

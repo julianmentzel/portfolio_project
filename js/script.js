@@ -67,3 +67,16 @@ hamburgerMenu.addEventListener('click', () => {
     hamburgerIcon.classList.toggle('fa-bars') // Remove fa-bars class from <i>
     hamburgerIcon.classList.toggle('fa-xmark') // Add in fa-xmark into <i>
 });
+
+// Have HB menu dissapear when menu item is clicked
+
+const elements = document.querySelectorAll('#mobile-menu a');
+
+elements.forEach(element => {
+    element.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburgerIcon.classList.remove('fa-xmark');
+        hamburgerIcon.classList.add('fa-bars')
+    })
+});
+

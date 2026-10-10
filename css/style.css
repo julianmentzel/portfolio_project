@@ -867,7 +867,7 @@ Mobile Optimization Media Queries
     }
 
     .contact-container {
-        margin: 0 0 4rem 0rem;
+        margin: 0 0 0rem 0rem;
     }
 
     .contact-container h2 {
@@ -887,6 +887,8 @@ Mobile Optimization Media Queries
     }
 
     .footer {
-        margin: 1rem 1.5rem 4rem;
+        margin: 0rem 1.5rem 4rem;
     }
+
+
 }

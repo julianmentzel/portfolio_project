@@ -892,3 +892,30 @@ Mobile Optimization Media Queries
 
 
 }
+
+@media (min-width: 769px) and (max-width: 1429px) {
+    header {
+        padding: 0 4rem;
+    }
+
+    .hero-content {
+        margin: 0 4rem;
+    }
+
+    .content-container {
+        margin: 0 4rem;
+    }
+
+    .about-content {
+        margin: 0 4rem;
+        gap: 8rem;
+    }
+
+    .contact-container {
+        margin: 0 4rem;
+    }
+
+    .footer {
+        margin: 1rem 4rem 10rem;
+    }
+}

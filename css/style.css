@@ -893,7 +893,7 @@ Mobile Optimization Media Queries
 
 }
 
-@media (min-width: 769px) and (max-width: 1429px) {
+@media (min-width: 769px) and (max-width: 1600px) {
     header {
         padding: 0 4rem;
     }

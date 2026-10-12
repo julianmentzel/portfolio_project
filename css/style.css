@@ -494,6 +494,7 @@ DEV & VENTURE PROJECTS
 }
 
 .card-content {
+    flex: 1;
 
     /* Margins */
     margin: 1.5rem;
@@ -843,6 +844,8 @@ Mobile Optimization Media Queries
     }
 
     .dev-project-card, .venture-project-card {
+        display: flex;
+        flex-direction: column;
         max-width: 100%;
     }
 

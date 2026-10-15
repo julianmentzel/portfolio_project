@@ -99,6 +99,11 @@ header {
 
 }
 
+.logo img {
+    height: 2.5rem;
+    width: auto;
+}
+
 .nav-bar ul {
     /* Turn to flex */
     display: flex;

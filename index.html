@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Julian Mentzel - Aspiring developer and founder">
+    <meta property="og:title" content="Julian Mentzel | Portfolio">
+    <meta property="og:description" content="Aspiring developer and founder">
+    <meta property="og:image" content="assets/images/julianmentzel-portfolio-page-preview-img.jpg">
     <title>Julian Mentzel | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon-julian-mark-on-black.png">
 </head>
 <body>
     <header>
 
-        <div class="logo"><h3>Julian - Image Placeholder</h3></div>
+        <a href=""><div class="logo"><img src="assets/images/julian-logo-transparent.png" alt="logo depicting a captial J"></div></a>
 
         <nav class="nav-bar">
             <ul>
@@ -18,34 +24,55 @@
                 <li><a href="#tech-stack">Tech Stack</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#contact">Hire Me</a></li>
+                <li id="hire-me-btn"><a href="#contact">Hire Me</a></li>
             </ul>
         </nav>
 
+        <!-- Mobile Hamburger Menu and Nav-->
+        <button class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
     </header>
 
+    <div class="mobile-menu" id="mobile-menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tech-stack">Tech Stack</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Hire Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Start -->
     <main>
         
         <section class="hero">
-            <p>Julian - Developer & Founder</p>
+            <div class="hero-content">
+                <p class="eyebrow">Julian - Developer & Founder</p>
 
-            <h1>Aspiring developer & founder</h1>
+                <h1>Aspiring developer & founder</h1>
 
-            <p>I design and build clean, fast, responsive web apps and I'm leanring something new with every product I ship.</p>
+                <p class="body_line">I design and build clean, fast, responsive web apps and I'm leanring something new with every product I ship.</p>
 
-            <div class="hero-buttons">
-                <a href="#projects">View my work →</a>
-                <a href="#contact">Get in touch</a>
+                <div class="hero-buttons">
+                    <a href="#projects" id="primary_button">View my work <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="#contact" id="secondary_button">Get in touch</a>
+                </div>
             </div>
         </section>
 
         <section class="about" id="about">
-            <div>
-                <h2>About</h2>
-            </div>
-            <div>
-                <p>I'm Julian, a self-taught developer focused on bringing product ideas to life. I care about solving real problems through digital solutions and turning rough ideas into polished, accessible apps.
-                <br>Right now, I'm deepening my Front-End skills while building projects that solve real problems.</p>
+            <div class="about-content">
+                <div class="about-heading">
+                    <h2>About</h2>
+                </div>
+                <div class="about-par">
+                    <p>I'm Julian, a self-taught developer focused on bringing product ideas to life. I care about solving real problems through digital solutions and turning rough ideas into polished, accessible apps.</p>
+                    <br>
+                    <p>Right now, I'm deepening my Front-End skills while building projects that solve real problems.</p>
+                </div>
             </div>
         </section>
 
@@ -59,33 +86,33 @@
                 <div class="tech-stack-cards">
 
                     <div class="frontend-card">
-                        <h5>FRONTEND</h5>
+                        <h5 class="cards-heading">FRONTEND</h5>
                         <div class="frontend-elements">
                             <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
+                                <li class="tech-badge">HTML</li>
+                                <li class="tech-badge">CSS</li>
+                                <li class="tech-badge">JavaScript</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="backend-card">
-                        <h5>BACKEND</h5>
+                        <h5 class="cards-heading">BACKEND</h5>
                         <div class="backend-elements">
                             <ul>
-                                <li>Python</li>
+                                <li class="tech-badge">Python</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="tools-card">
-                        <h5>TOOLS & WORKFLOW</h5>
+                        <h5 class="cards-heading">TOOLS & WORKFLOW</h5>
                         <div class="tools-elements">
                             <ul>
-                                <li>Git & GitHub</li>
-                                <li>VS Code</li>
-                                <li>Figma</li>
-                                <li>Lovable</li>
+                                <li class="tech-badge">Git & GitHub</li>
+                                <li class="tech-badge">VS Code</li>
+                                <li class="tech-badge">Figma</li>
+                                <li class="tech-badge">Lovable</li>
                             </ul>
                         </div>
                     </div>
@@ -106,14 +133,14 @@
 
                     <div class="dev-projects-cards">
 
-                        <div class="dev-project-card-one">
+                        <div class="dev-project-card">
 
-                            <img src="assets/images/dev-project-1.jpg" alt="Abstract image of space grid in blue.">
+                            <img src="assets/images/dev1-showcase.jpg" alt="Abstract image of space grid in blue.">
 
-                            <div class="card-one-content">
-                                <h5>Dev Project One</h5>
+                            <div class="card-content">
+                                <h5>This Portfolio</h5>
 
-                                <p>A placeholder project card. Swap this copy for a short description of what you built and the problem it solves.</p>
+                                <p>Yes, the site you're looking at. My first dev project designed and built from scratch. One page, no template, no frameworks. Just spacing, styling and some JS.</p>
 
                                 <div class="card-badges">
                                     <ul>
@@ -123,19 +150,23 @@
                                     </ul>
                                 </div>
 
-                                <a href="https://www.github.com" target="_blank">View on GitHub</a>
+                                <a href="https://www.github.com" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    View on GitHub
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
                             </div>
 
                         </div>
 
-                        <div class="dev-project-card-two">
+                        <div class="dev-project-card">
 
-                            <img src="assets/images/dev-project-2.jpg" alt="Abstract image of blue light ray.">
+                            <img src="assets/images/dev2-showcase.jpg" alt="Abstract image of blue light ray.">
 
-                            <div class="card-two-content">
-                                <h5>Dev Project Two</h5>
+                            <div class="card-content">
+                                <h5>Untitled Project</h5>
 
-                                <p>Another placeholder. Describe the feature set, what you learned, and anything notable about the implementation.</p>
+                                <p>This card is empty on purpose. Got something you want built? A prototype, a landing page, a side project stuck half way? I accept cash or equity.</p>
 
                                 <div class="card-badges">
                                     <ul>
@@ -145,19 +176,23 @@
                                     </ul>
                                 </div>
 
-                                <a href="https://www.github.com" target="_blank">View on GitHub</a>
+                                <a href="https://www.github.com" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    View on GitHub
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
                             </div>
 
                         </div>
 
-                        <div class="dev-project-card-three">
+                        <div class="dev-project-card">
 
-                            <img src="assets/images/dev-project-3.jpg" alt="ABstract image of 3D floating blue lines.">
+                            <img src="assets/images/dev3-showcase.jpg" alt="ABstract image of 3D floating blue lines.">
 
-                            <div class="card-three-content">
-                                <h5>Dev Project Three</h5>
+                            <div class="card-content">
+                                <h5>Now Hiring: Your Idea</h5>
 
-                                <p>Another placeholder. Describe the feature set, what you learned, and anything notable about the implementation.</p>
+                                <p>This slot has been empty becasue I'd rather show you a blank card than pad the grid. Consider it an open posiiton: you bring the messy 'what if', I'll bring the build.</p>
 
                                 <div class="card-badges">
                                     <ul>
@@ -167,7 +202,11 @@
                                     </ul>
                                 </div>
 
-                                <a href="https://www.github.com" target="_blank">View on GitHub</a>
+                                <a href="https://www.github.com" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    View on GitHub
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
                             </div>
 
                         </div>
@@ -184,64 +223,79 @@
 
                     <div class="venture-projects-cards">
 
-                        <div class="venture-project-card-one">
+                        <div class="venture-project-card">
 
-                            <img src="assets/images/venture-project-1.jpg" alt="Abstract image of blue radiant circle">
+                            <img src="assets/images/onus-showcase.webp" alt="Abstract image of blue radiant circle">
 
-                            <div class="card-one-content">
-                                <h5>Venture One</h5>
+                            <div class="card-content">
+                                <h5>Onus Health</h5>
 
-                                <p>Placeholder venture project. Replace with the problem you solved, the market, and your role as founder.</p>
+                                <p>Digital health layer unifying fragmented patient data across Namibian clinics and hospitals. Co-founder, now piloting with clinicians ahead of pan-African expansion.</p>
 
                                 <div class="card-badges">
                                     <ul>
                                         <li>SaaS</li>
                                         <li>Health Tech</li>
+                                        <li>Founder</li>
                                     </ul>
                                 </div>
 
-                                <a href="https://www.onus.health" target="_blank">Visit Site</a>
+                                <a href="https://www.onus.health" target="_blank">
+                                    <i class="fa-solid fa-heart"></i>
+                                    View Site
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
                             </div>
 
                         </div>
 
-                        <div class="venture-project-card-two">
+                        <div class="venture-project-card">
 
-                            <img src="assets/images/venture-project-2.jpg" alt="Abstract image of floating blue lines.">
+                            <img src="assets/images/clyvve-showcase.jpg" alt="Abstract image of floating blue lines.">
 
-                            <div class="card-two-content">
-                                <h5>Venture Two</h5>
+                            <div class="card-content">
+                                <h5>Clyvve</h5>
 
-                                <p>Another placeholder. Summarize traction, the team, and what made the idea worth pursuing.</p>
+                                <p>AI-powered LinkedIn coaching helping consultants and solopreneurs post consistently in their own voice. Solo-founder, building for US and European markets.</p>
 
                                 <div class="card-badges">
                                     <ul>
                                         <li>SaaS</li>
                                         <li>AI</li>
+                                        <li>Founder</li>
                                     </ul>
                                 </div>
 
-                                <a href="https://www.onus.health" target="_blank">Visit Site</a>
+                                <a href="https://www.clyvve.app" target="_blank">
+                                    <i class="fa-solid fa-robot"></i>
+                                    View Site
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
                             </div>
 
                         </div>
 
-                        <div class="venture-project-card-three">
+                        <div class="venture-project-card">
 
-                            <img src="assets/images/venture-project-3.jpg" alt="Abstract image of 3D floating objects in blue.">
+                            <img src="assets/images/unknown-showcase.jpg" alt="Abstract image of 3D floating objects in blue.">
 
-                            <div class="card-three-content">
-                                <h5>Venture Three</h5>
+                            <div class="card-content">
+                                <h5>Terra Icognita</h5>
 
-                                <p>A third placeholder. Keep it concise: the concept, your contribution, and a key outcome or lesson.</p>
+                                <p>The one I can't name yet. The question mark on the card is deliberate, it's early, it's real, and I'd rather turn up with the thing itself than a teaser.</p>
 
                                 <div class="card-badges">
                                     <ul>
-                                        <li>Data</li>
+                                        <li>In Progress</li>
+                                        <li>Founder</li>
                                     </ul>
                                 </div>
 
-                                <a href="https://www.onus.health" target="_blank">Visit Site</a>
+                                <a href="https://www.github.com" target="_blank">
+                                    <i class="fa-brands fa-github"></i>
+                                    View Site
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
                             </div>
 
                         </div>
@@ -258,39 +312,50 @@
 
         <section class="contact" id="contact">
 
-            <div class="content-container">
+            <div class="contact-container">
 
                 <h2>Let's build something together</h2>
-                <p>Open to collaborate, build and launch.</p>
+                <p class="contact-subtitle">Open to collaborate, build and launch.</p>
 
                 <div class="contact-elements">
+                    <a href="mailto:julianmentzel@gmail.com" target="_blank" class="contact-label">
+                        <div class="contact-label-info">
+                            <i class="fa-regular fa-envelope email-icon"></i>
+                            <span class="contact-label-info-text">Email</span>
+                        </div>
+                        <span class="contact-content">julianmentzel@gmail.com</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
 
-                    <div class="contact-email">
-                        <span class="fa-regular fa-envelope email-icon"></span>
-                        <p>Email</p>
-                        <a href="mailto: julianmentzel@gmail.com" target="_blank">julianmentzel@gmail.com</a>
-                    </div>
+                    <a href="https://www.linkedin.com/in/julianmentzel/" target="_blank" class="contact-label">
+                        <div class="contact-label-info">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span class="contact-label-info-text">LinkedIn</span>
+                        </div>
+                        <span class="contact-content">linkedin.com/in/julianmentzel</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
 
-                    <div class="contact-linkedin">
-                        <span class="fa-brands fa-linkedin linkedin-icon"></span>
-                        <p>LinkedIn</p>
-                        <a href="https://wwww.linkedin.com" target="_blank">linkedin.com/in/julian-mentzel</a>
-                    </div>
-
-                    <div class="contact-github">
-                        <span class="fa-brands fa-github github-icon"></span>
-                        <p>GitHub</p>
-                        <a href="https://www.github.com" target="_blank">github.com/julian-mentzel</a>
-                    </div>
-
+                    <a href="https://www.github.com/julianmentzel" target="_blank" class="contact-label">
+                        <div class="contact-label-info">
+                            <i class="fa-brands fa-github github-icon"></i>
+                            <span class="contact-label-info-text">GitHub</span>
+                        </div>
+                        <span class="contact-content">github.com/julianmentzel</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>      
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>2026 Julian Mentzel. Built with HTML, CSS and JS.</p>
+    <footer class="footer">
+        <p>© 2026 Julian Mentzel. Built with HTML, CSS and JS.</p>
     </footer>
+
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
     
     <script src="js/script.js"></script>
 </body>
